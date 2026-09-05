@@ -225,15 +225,15 @@ img {
 .logo-img {
     height: 54px;
     width: auto;
-    border-radius: var(--radius-sm);
-    border: 2px solid var(--color-black-ink);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    box-shadow: none;
+    background: transparent;
     transition: var(--transition);
+    object-fit: contain;
 }
 
 .logo-brand:hover .logo-img {
-    transform: scale(1.05) rotate(-2deg);
-    border-color: var(--color-crimson);
+    transform: scale(1.05);
 }
 
 .logo-text-box {
