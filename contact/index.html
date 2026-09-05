@@ -3,28 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact TechMithilanchal's AI solutions architects. Schedule a consultation for custom chatbots, agents, or semantic search deployments.">
-    <meta name="keywords" content="contact TechMithilanchal, AI consultation, request quote, custom AI project">
+    <meta name="description" content="Contact Tech Mithilanchal for Website Development, Mobile App Development, AI Chatbots, AI Agents, Digital Marketing, SEO, or Performance Marketing.">
+    <meta name="keywords" content="Contact Tech Mithilanchal, Get Quote Web Development, App Development Quote, AI Solutions Quote, Digital Marketing Agency, SEO Audit">
     
-    <!-- SEO Optimization -->
-    <link rel="canonical" href="https://techmithilanchal.com/contact/" />
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://techmithilanchal.com/contact/" />
-    <meta property="og:title" content="Contact Us - TechMithilanchal AI Services" />
-    <meta property="og:description" content="Schedule a session with an AI systems architect to plan, scope, and price your custom AI automation project." />
-    <meta property="og:image" content="https://techmithilanchal.com/logo.png" />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://techmithilanchal.com/contact/" />
-    <meta property="twitter:title" content="Contact Us - TechMithilanchal" />
-    <meta property="twitter:description" content="Custom chatbot, workflow automation agent, or secure database search query. Let's design a cost-efficient deployment plan." />
-    <meta property="twitter:image" content="https://techmithilanchal.com/logo.png" />
-
-    <title>Schedule an AI Consultation & Cost Optimization Audit</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <title>Contact Us | Tech Mithilanchal</title>
+    <link rel="icon" type="image/jpeg" href="/assets/logo.jpg">
     <link rel="stylesheet" href="/style.css">
     <script defer src="/app.js"></script>
 </head>
@@ -32,23 +15,30 @@
     <!-- Navigation Header -->
     <header class="navbar">
         <div class="container navbar-container">
-            <a href="/" class="logo" id="nav-logo">
-                <div class="logo-icon"></div>
-                Tech<span>Mithilanchal</span>
+            <a href="/" class="logo-brand" id="nav-logo">
+                <img src="/assets/logo.jpg" alt="Tech Mithilanchal Logo" class="logo-img">
+                <div class="logo-text-box">
+                    <div class="logo-title">Tech <span>Mithilanchal</span></div>
+                    <div class="logo-tagline">Building Ideas • Creating Solutions</div>
+                </div>
             </a>
             
             <nav>
                 <ul class="nav-menu" id="nav-menu-list">
                     <li><a href="/" class="nav-link" id="link-home">Home</a></li>
-                    <li><a href="/about-us/" class="nav-link" id="link-about">About Us</a></li>
                     <li><a href="/services/" class="nav-link" id="link-services">Services</a></li>
-                    <li><a href="/demo/" class="nav-link" id="link-demo">Interactive Demo</a></li>
-                    <li><a href="/contact/" class="nav-link" id="link-contact">Contact Us</a></li>
-                    <li class="mobile-cta-item"><a href="/contact/" class="btn nav-cta mobile-cta" id="mobile-header-cta">Get a Quote</a></li>
+                    <li>
+                        <a href="/demo/" class="nav-link" id="link-demo">
+                            AI Lab & Demo <span class="nav-badge"><span class="nav-badge-dot"></span>Interactive</span>
+                        </a>
+                    </li>
+                    <li><a href="/about-us/" class="nav-link" id="link-about">About Us</a></li>
+                    <li><a href="/contact/" class="nav-link active" id="link-contact">Contact Us</a></li>
+                    <li class="mobile-cta-item"><a href="/contact/" class="btn btn-primary mobile-cta" id="mobile-header-cta">Get a Quote</a></li>
                 </ul>
             </nav>
             
-            <a href="/contact/" class="btn nav-cta" id="header-cta">Get a Quote</a>
+            <a href="/contact/" class="btn btn-primary" id="header-cta">Get a Quote</a>
             
             <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle Navigation Menu">
                 <span></span>
@@ -60,124 +50,125 @@
 
     <!-- Main Content -->
     <main>
-        <!-- Contact Header -->
-        <section class="section reveal-hidden" id="contact-intro">
+        <section class="section reveal-hidden" id="contact-section">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-subtitle">Let's Connect</span>
-                    <h1 class="section-title">Schedule a Consultation</h1>
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h1 class="section-title">Schedule a Free <span>Technical & Growth Consultation</span></h1>
                     <p class="section-description">
-                        Ready to cut operational overhead with smart AI? Tell us about your project, and an AI systems architect will analyze your needs within 24 hours.
+                        Whether you need a new Website, Mobile App, AI Chatbot, Autonomous Agent, SEO Strategy, or Paid Performance Campaign, fill out the form below for a free evaluation within 24 hours.
                     </p>
                 </div>
-            </div>
-        </section>
 
-        <!-- Form and FAQ section -->
-        <section class="section reveal-hidden" id="contact-main" style="padding-top: 0;">
-            <div class="container contact-grid">
-                
-                <!-- Contact Form Card -->
-                <div class="contact-card">
-                    <form id="tech-contact-form" class="contact-form" name="contact" method="POST" data-netlify="true">
-                        <!-- Hidden input required for Netlify AJAX submissions -->
-                        <input type="hidden" name="form-name" value="contact" />
-                        <div class="form-group-row">
+                <div class="contact-grid">
+                    <!-- Form Card -->
+                    <div class="contact-card">
+                        <form id="tech-contact-form" name="contact" method="POST" data-netlify="true">
+                            <input type="hidden" name="form-name" value="contact">
+                            
                             <div class="form-group">
-                                <label for="client-name" class="form-label">Your Name</label>
-                                <input type="text" id="client-name" name="name" class="form-input" placeholder="John Doe" required>
+                                <label class="form-label" for="full-name">Full Name *</label>
+                                <input type="text" id="full-name" name="name" class="form-control" placeholder="e.g. Rahul Sharma" required>
                             </div>
+
                             <div class="form-group">
-                                <label for="client-email" class="form-label">Work Email</label>
-                                <input type="email" id="client-email" name="email" class="form-input" placeholder="john@company.com" required>
+                                <label class="form-label" for="email">Work Email *</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="rahul@company.com" required>
                             </div>
-                        </div>
 
-                        <div class="form-group-row">
                             <div class="form-group">
-                                <label for="client-company" class="form-label">Company Name</label>
-                                <input type="text" id="client-company" name="company" class="form-input" placeholder="Acme Corp" required>
+                                <label class="form-label">Services Required (Select all that apply):</label>
+                                <div class="service-checkboxes">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="service" value="Website Development" checked> Website Development
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="service" value="App Development"> App Development
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="service" value="AI Chatbot"> AI Chatbot
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="service" value="AI Agents"> AI Agents
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="service" value="Digital Marketing"> Digital Marketing
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="service" value="SEO"> Technical SEO
+                                    </label>
+                                    <label class="checkbox-label" class="card card-wide">
+                                        <input type="checkbox" name="service" value="Performance Marketing"> Performance Marketing & PPC Ads
+                                    </label>
+                                </div>
                             </div>
+
                             <div class="form-group">
-                                <label for="client-region" class="form-label">Your Region</label>
-                                <select id="client-region" name="region" class="form-select" required>
-                                    <option value="" disabled selected>Select Region</option>
-                                    <option value="usa">USA & Canada</option>
-                                    <option value="europe">Europe</option>
-                                    <option value="india">India</option>
-                                    <option value="other">Other Global</option>
-                                </select>
+                                <label class="form-label" for="message">Project Details / Goals *</label>
+                                <textarea id="message" name="message" class="form-control" rows="4" placeholder="Tell us about your project goals, technical requirements, and target timeline..." required></textarea>
                             </div>
-                        </div>
 
-                        <div class="form-group">
-                            <label for="client-service" class="form-label">Service of Interest</label>
-                            <select id="client-service" name="service" class="form-select" required>
-                                <option value="" disabled selected>Select Service</option>
-                                <option value="chatbot">Custom AI Chatbot</option>
-                                <option value="agent">Autonomous AI Agent</option>
-                                <option value="rag">AI-Based RAG Search</option>
-                                <option value="multi">Full Stack Integration</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="client-message" class="form-label">Tell us about your AI project requirements</label>
-                            <textarea id="client-message" name="message" class="form-textarea" placeholder="Explain what data you want to search, who will talk to the chatbot, or what workflows you need to automate..." required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Inquiry</button>
-                    </form>
-                </div>
-
-                <!-- FAQs Sidebar -->
-                <div class="faq-section">
-                    <h2 style="font-family: var(--font-heading); font-size: 1.8rem; font-weight: 700; margin-bottom: 1rem;">Frequent Questions</h2>
-                    
-                    <!-- FAQ 1 -->
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <span>How do you keep costs low?</span>
-                            <span class="faq-icon">+</span>
-                        </div>
-                        <div class="faq-answer">
-                            We use a highly streamlined, remote development center which cuts down geographic workspace premiums. Furthermore, we optimize compute budgets by fine-tuning smaller, task-specific open-source models rather than routing all queries through expensive proprietary general APIs.
-                        </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem;">
+                                Submit Inquiry & Request Free Proposal 🚀
+                            </button>
+                        </form>
                     </div>
 
-                    <!-- FAQ 2 -->
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <span>How is my company IP protected?</span>
-                            <span class="faq-icon">+</span>
+                    <!-- Direct Contact & FAQ -->
+                    <div>
+                        <div class="contact-card" style="margin-bottom: 2rem; border-color: var(--color-black-ink);">
+                            <h3 style="font-family: var(--font-heading); font-size: 1.3rem; font-weight: 800; color: var(--color-crimson); margin-bottom: 1rem;">
+                                Direct Contact Details
+                            </h3>
+                            <p style="color: var(--text-secondary); line-height: 1.8;">
+                                <strong>Email:</strong> contact@techmithilanchal.com<br>
+                                <strong>Working Hours:</strong> Mon - Sat (9:00 AM - 7:00 PM IST)<br>
+                                <strong>Proposal Response:</strong> Within 24 Hours
+                            </p>
                         </div>
-                        <div class="faq-answer">
-                            We sign comprehensive SLAs and NDA terms before any data exchange. We do not use your private database items or customer chat logs to train public foundation models. We also offer deployment directly inside your own private clouds (VPC).
+
+                        <h3 style="font-family: var(--font-heading); font-size: 1.4rem; font-weight: 800; margin-bottom: 1.25rem;">
+                            Frequently Asked Questions
+                        </h3>
+
+                        <div class="faq-list">
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    What services does Tech Mithilanchal provide? <span>+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    We offer full-spectrum IT, AI & Marketing services: Website Development, Mobile App Development, Custom AI Chatbots, Autonomous AI Agents, Autonomous Automations, Digital Marketing, Technical SEO, and Performance Marketing (PPC).
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    How quickly can we see results with SEO & Performance Marketing? <span>+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    Paid performance campaigns (Google Ads, Meta Ads) start generating lead traffic within 24-48 hours. Technical SEO and keyword ranking growth typically show significant organic traffic scaling within 60-90 days.
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    Can your AI solutions integrate with our Web & Mobile apps? <span>+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    Yes! We build AI Chatbots and Autonomous Agents designed to embed natively into React/Next.js web apps, iOS/Android mobile apps, Slack, WhatsApp, and custom REST API pipelines.
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    How do I get a custom project proposal and estimate? <span>+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    Simply select your required services in the form above and submit your project details. Our team will review your requirements and send a customized quote within 24 hours.
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <!-- FAQ 3 -->
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <span>What is a typical deployment timeline?</span>
-                            <span class="faq-icon">+</span>
-                        </div>
-                        <div class="faq-answer">
-                            A custom document-based RAG Search or conversational Chatbot typically takes 2 to 4 weeks from planning to production. Complex multi-step Autonomous Agents requiring multi-software integrations can take between 4 to 8 weeks.
-                        </div>
-                    </div>
-
-                    <!-- FAQ 4 -->
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <span>Can we deploy models on our servers?</span>
-                            <span class="faq-icon">+</span>
-                        </div>
-                        <div class="faq-answer">
-                            Yes! We specialize in deploying local vector databases and open-source models (like Llama-3 or Mistral) on your dedicated AWS, Google Cloud, or Azure VMs. This gives you full compute independence with zero recurring API costs.
-                        </div>
-                    </div>
-
                 </div>
 
             </div>
@@ -185,57 +176,61 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+        <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-column">
-                    <a href="/" class="logo">
-                        <div class="logo-icon"></div>
-                        Tech<span>Mithilanchal</span>
+                <div>
+                    <a href="/" class="logo-brand" style="margin-bottom: 1rem;">
+                        <img src="/assets/logo.jpg" alt="Tech Mithilanchal" class="logo-img" style="height: 44px;">
+                        <div class="logo-text-box">
+                            <div class="logo-title" style="font-size: 1.2rem;">Tech <span>Mithilanchal</span></div>
+                            <div class="logo-tagline" style="font-size: 0.62rem;">Building Ideas • Creating Solutions</div>
+                        </div>
                     </a>
-                    <p class="footer-desc">
-                        Engineering premium, cost-optimized artificial intelligence systems for global startups, US, European, and Indian enterprises. Specializing in Chatbots, Agents, and RAG architectures.
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-top: 1rem;">
+                        Next-generation IT, AI & Digital Marketing Studio. We engineer high-performance Websites, Mobile Apps, AI Chatbots, AI Agents, Technical SEO, Digital Marketing, and Performance Ad Campaigns.
                     </p>
                 </div>
                 
-                <div class="footer-column">
-                    <h4 class="footer-title">Navigation</h4>
-                    <ul class="footer-links">
-                        <li><a href="/" class="footer-link">Home</a></li>
-                        <li><a href="/about-us/" class="footer-link">About Us</a></li>
-                        <li><a href="/services/" class="footer-link">AI Services</a></li>
-                        <li><a href="/demo/" class="footer-link">Interactive Demo</a></li>
-                        <li><a href="/contact/" class="footer-link">Contact Us</a></li>
-                    </ul>
+                <div>
+                    <h4 class="footer-col-title">Our Services</h4>
+                    <div class="footer-links">
+                        <a href="/services/website-development/">Website Development</a>
+                        <a href="/services/app-development/">Mobile App Development</a>
+                        <a href="/services/ai-chatbots/">AI Chatbots</a>
+                        <a href="/services/ai-agents/">AI Agents</a>
+                        <a href="/services/autonomous-systems/">Autonomous Systems</a>
+                        <a href="/services/digital-marketing/">Digital Marketing</a>
+                        <a href="/services/seo/">Technical SEO</a>
+                        <a href="/services/performance-marketing/">Performance Marketing</a>
+                    </div>
                 </div>
 
-                <div class="footer-column">
-                    <h4 class="footer-title">AI Offerings</h4>
-                    <ul class="footer-links">
-                        <li><a href="/services/#chatbots" class="footer-link">Proprietary Chatbots</a></li>
-                        <li><a href="/services/#agents" class="footer-link">Autonomous Agents</a></li>
-                        <li><a href="/services/#rag" class="footer-link">RAG Search Systems</a></li>
-                        <li><a href="/about-us/#values" class="footer-link">Security & IP Protection</a></li>
-                    </ul>
+                <div>
+                    <h4 class="footer-col-title">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="/">Home</a>
+                        <a href="/services/">All Services</a>
+                        <a href="/demo/">AI Lab & Demo</a>
+                        <a href="/about-us/">About Us</a>
+                        <a href="/contact/">Contact Us</a>
+                    </div>
                 </div>
 
-                <div class="footer-column">
-                    <h4 class="footer-title">Stay Connected</h4>
-                    <p class="footer-desc" style="font-size: 0.85rem;">Subscribe to receive news on cutting-edge open-source AI models & implementation guides.</p>
-                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!'); this.reset();">
-                        <input type="email" placeholder="Enter your email" class="newsletter-input" required aria-label="Email address for newsletter">
-                        <button type="submit" class="btn-icon" aria-label="Subscribe">✓</button>
-                    </form>
+                <div>
+                    <h4 class="footer-col-title">Contact Us</h4>
+                    <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 0.75rem; color: var(--text-secondary);">
+                        <strong>Email:</strong> contact@techmithilanchal.com<br>
+                        <strong>Working Hours:</strong> Mon - Sat (9 AM - 7 PM)<br>
+                        <strong>Turnaround:</strong> Within 24 Hours
+                    </p>
+                    <a href="/contact/" class="btn btn-secondary" style="padding: 0.55rem 1.1rem; font-size: 0.88rem;">Request Quote 🚀</a>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2026 TechMithilanchal. All rights reserved. Built for global scaling.</p>
-                <div class="footer-socials">
-                    <a href="#" class="social-link" aria-label="GitHub"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
-                    <a href="#" class="social-link" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"></path><circle cx="4" cy="4" r="2"></circle></svg></a>
-                    <a href="#" class="social-link" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
-                </div>
+                <div>&copy; 2026 Tech Mithilanchal. All rights reserved. Building Ideas • Creating Solutions.</div>
+                <div>Designed with Mithila Art & Tech Excellence</div>
             </div>
         </div>
     </footer>

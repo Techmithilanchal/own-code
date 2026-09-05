@@ -3,96 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Try TechMithilanchal's interactive RAG simulation. See how modern AI searches documents and synthesizes precise answers step-by-step.">
-    <meta name="keywords" content="RAG demo, AI simulator, vector search visualization, prompt engineering simulation">
+    <meta name="description" content="Tech Mithilanchal AI Innovation Hub - Enterprise Custom AI Chatbots, Autonomous AI Agents, RAG Semantic Search, Open-Source LLM Fine-Tuning, and Machine Learning Engineering.">
+    <meta name="keywords" content="Custom AI Chatbots, Autonomous AI Agents, RAG Search, LLM Fine-Tuning, Llama 3, Machine Learning, Predictive Analytics, Tech Mithilanchal AI">
     
     <!-- SEO Optimization -->
     <link rel="canonical" href="https://techmithilanchal.com/demo/" />
     
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://techmithilanchal.com/demo/" />
-    <meta property="og:title" content="Interactive Demo - TechMithilanchal" />
-    <meta property="og:description" content="Watch how our vector search engine translates plain text queries, retrieves matching document contexts, and feeds fine-tuned LLMs." />
-    <meta property="og:image" content="https://techmithilanchal.com/logo.png" />
+    <meta property="og:title" content="AI Solutions & Innovation Hub | Tech Mithilanchal" />
+    <meta property="og:description" content="Enterprise-grade Custom AI Chatbots, Autonomous Workflow Agents, RAG Semantic Search, and LLM Fine-Tuning engineered by Tech Mithilanchal." />
+    <meta property="og:image" content="/assets/logo.jpg" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://techmithilanchal.com/demo/" />
-    <meta property="twitter:title" content="RAG Simulation Demo - TechMithilanchal" />
-    <meta property="twitter:description" content="Test our interactive pipeline visualizer. Experience 100% cited answers processed in real-time." />
-    <meta property="twitter:image" content="https://techmithilanchal.com/logo.png" />
+    <meta property="twitter:title" content="AI Engineering & Innovation Hub - Tech Mithilanchal" />
+    <meta property="twitter:description" content="Custom LLMs, Autonomous AI Agents, and Enterprise RAG Search systems tailored for global companies." />
+    <meta property="twitter:image" content="/assets/logo.jpg" />
 
-    <title>Interactive RAG Pipeline & AI Agent Visualizer</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <!-- Schema.org JSON-LD Service Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Artificial Intelligence Engineering & Autonomous Systems",
+      "provider": {
+        "@type": "Organization",
+        "name": "Tech Mithilanchal",
+        "url": "https://techmithilanchal.com/"
+      },
+      "areaServed": "Global",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "AI Solutions Catalog",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Custom AI Chatbots"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Autonomous AI Agents"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Enterprise RAG Semantic Search"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Open-Source LLM Fine-Tuning"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+
+    <title>AI Solutions & Innovation Hub | Enterprise AI Chatbots, Agents & RAG Engineering</title>
+    <link rel="icon" type="image/jpeg" href="/assets/logo.jpg">
     <link rel="stylesheet" href="/style.css">
     <script defer src="/app.js"></script>
-    <style>
-        .query-chips {
-            display: flex;
-            gap: 0.75rem;
-            flex-wrap: wrap;
-            margin-bottom: 1.5rem;
-        }
-        .chip {
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid var(--border-color);
-            border-radius: 99px;
-            padding: 0.4rem 1rem;
-            font-size: 0.85rem;
-            cursor: pointer;
-            color: var(--text-muted);
-            transition: var(--transition-smooth);
-        }
-        .chip:hover {
-            background: rgba(139, 92, 246, 0.1);
-            border-color: var(--color-primary);
-            color: white;
-        }
-        .output-box {
-            background: var(--bg-darker);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 1.5rem;
-            min-height: 120px;
-            font-family: var(--font-body);
-            position: relative;
-        }
-        .output-label {
-            position: absolute;
-            top: -10px;
-            left: 20px;
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            padding: 0.2rem 0.75rem;
-            font-size: 0.75rem;
-            font-weight: 600;
-            border-radius: 4px;
-            color: var(--color-secondary);
-        }
-    </style>
 </head>
 <body>
     <!-- Navigation Header -->
     <header class="navbar">
         <div class="container navbar-container">
-            <a href="/" class="logo" id="nav-logo">
-                <div class="logo-icon"></div>
-                Tech<span>Mithilanchal</span>
+            <a href="/" class="logo-brand" id="nav-logo">
+                <img src="/assets/logo.jpg" alt="Tech Mithilanchal Logo" class="logo-img">
+                <div class="logo-text-box">
+                    <div class="logo-title">Tech <span>Mithilanchal</span></div>
+                    <div class="logo-tagline">Building Ideas • Creating Solutions</div>
+                </div>
             </a>
             
             <nav>
                 <ul class="nav-menu" id="nav-menu-list">
                     <li><a href="/" class="nav-link" id="link-home">Home</a></li>
-                    <li><a href="/about-us/" class="nav-link" id="link-about">About Us</a></li>
                     <li><a href="/services/" class="nav-link" id="link-services">Services</a></li>
-                    <li><a href="/demo/" class="nav-link" id="link-demo">Interactive Demo</a></li>
+                    <li>
+                        <a href="/demo/" class="nav-link active" id="link-demo">
+                            AI Lab & Demo <span class="nav-badge"><span class="nav-badge-dot"></span>Interactive</span>
+                        </a>
+                    </li>
+                    <li><a href="/about-us/" class="nav-link" id="link-about">About Us</a></li>
                     <li><a href="/contact/" class="nav-link" id="link-contact">Contact Us</a></li>
-                    <li class="mobile-cta-item"><a href="/contact/" class="btn nav-cta mobile-cta" id="mobile-header-cta">Get a Quote</a></li>
+                    <li class="mobile-cta-item"><a href="/contact/" class="btn btn-primary mobile-cta" id="mobile-header-cta">Get a Quote</a></li>
                 </ul>
             </nav>
             
-            <a href="/contact/" class="btn nav-cta" id="header-cta">Get a Quote</a>
+            <a href="/contact/" class="btn btn-primary" id="header-cta">Get a Quote</a>
             
             <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle Navigation Menu">
                 <span></span>
@@ -104,144 +116,245 @@
 
     <!-- Main Content -->
     <main>
-        <!-- Demo Header -->
-        <section class="section reveal-hidden" id="demo-intro">
+        <!-- AI Hub Hero Section -->
+        <section class="section reveal-hidden" id="ai-hub-hero">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-subtitle">Visual Simulator</span>
-                    <h1 class="section-title">RAG Pipeline Demo</h1>
+                    <span class="section-subtitle">Artificial Intelligence & Autonomous Engineering</span>
+                    <h1 class="section-title">Enterprise <span>AI Engineering Solutions</span></h1>
                     <p class="section-description">
-                        Type a question below or choose a preset query to visualize how our Retrieval-Augmented Generation (RAG) system reads internal files and builds responses.
+                        Tech Mithilanchal builds bespoke, high-accuracy Artificial Intelligence systems designed to automate operations, unlock hidden document insights, and cut operating overheads by up to 70%.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- Interactive Pipeline Section -->
-        <section class="section reveal-hidden" id="demo-visualizer" style="padding-top: 0;">
+        <!-- Deep SEO Content Grid: What We Do in AI -->
+        <section class="section reveal-hidden" id="ai-capabilities-grid" style="padding-top: 0;">
             <div class="container">
-                <div class="demo-container">
+                <div class="grid-3" style="margin-bottom: 4rem;">
                     
-                    <!-- Pre-set queries -->
-                    <div class="query-chips" id="query-preset-chips">
-                        <button class="chip" onclick="document.getElementById('demo-query').value = 'How do custom chatbots work?';">How do custom chatbots work?</button>
-                        <button class="chip" onclick="document.getElementById('demo-query').value = 'Can you explain AI RAG search?';">Can you explain AI RAG search?</button>
-                        <button class="chip" onclick="document.getElementById('demo-query').value = 'What tasks can AI agents automate?';">What tasks can AI agents automate?</button>
-                        <button class="chip" onclick="document.getElementById('demo-query').value = 'Are your AI services cost-effective?';">Are your AI services cost-effective?</button>
-                    </div>
+                    <!-- AI Capability 1 -->
+                    <article class="card">
+                        <div class="card-icon">🤖</div>
+                        <h3 class="card-title">Custom AI Chatbot Engineering</h3>
+                        <p class="card-text">
+                            We train and deploy intelligent conversational bots trained on your corporate knowledge bases, support tickets, and CRM data. Built with strict hallucination guardrails for 24/7 omnichannel resolution.
+                        </p>
+                        <ul style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.8; margin-top: 0.5rem;">
+                            <li>✦ WhatsApp, Slack, Teams & Web Integrations</li>
+                            <li>✦ Multi-lingual Natural Language Understanding</li>
+                            <li>✦ Automated CRM & Helpdesk Ticket Creation</li>
+                        </ul>
+                    </article>
 
-                    <!-- Trigger box -->
-                    <div class="demo-trigger-box">
-                        <input type="text" id="demo-query" class="demo-input" placeholder="Type or click a question above..." aria-label="User Query Input">
-                        <button id="run-demo-btn" class="btn btn-primary">Run Simulation</button>
-                    </div>
+                    <!-- AI Capability 2 -->
+                    <article class="card">
+                        <div class="card-icon gold">⚡</div>
+                        <h3 class="card-title">Autonomous AI Workflow Agents</h3>
+                        <p class="card-text">
+                            Multi-agent systems capable of reasoning through complex, multi-step operations. Our agents parse emails, extract data, verify invoices, execute API calls, and update ERP systems automatically.
+                        </p>
+                        <ul style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.8; margin-top: 0.5rem;">
+                            <li>✦ LangChain & LlamaIndex Agent Frameworks</li>
+                            <li>✦ Human-in-the-Loop (HITL) Safety Controls</li>
+                            <li>✦ Dynamic Tool & Function Calling Architecture</li>
+                        </ul>
+                    </article>
 
-                    <!-- Output box -->
-                    <div class="output-box">
-                        <span class="output-label">AI Engine Output</span>
-                        <div id="demo-output-text" style="line-height: 1.7; font-size: 0.95rem;">
-                            <span style="color: var(--text-dark);">Simulator is idle. Select or type a question and click 'Run Simulation' to begin.</span>
+                    <!-- AI Capability 3 -->
+                    <article class="card">
+                        <div class="card-icon peacock">🔍</div>
+                        <h3 class="card-title">Enterprise RAG & Semantic Search</h3>
+                        <p class="card-text">
+                            Transform fragmented internal documents (PDFs, Notion, Google Drive, SQL) into a unified semantic index. Perform instantaneous vector searches with exact citations and zero data leakage.
+                        </p>
+                        <ul style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.8; margin-top: 0.5rem;">
+                            <li>✦ Hybrid Vector + Keyword Reranking</li>
+                            <li>✦ Pinecone, Qdrant & pgvector Database Setup</li>
+                            <li>✦ Citation Footnotes for 100% Auditability</li>
+                        </ul>
+                    </article>
+
+                    <!-- AI Capability 4 -->
+                    <article class="card">
+                        <div class="card-icon gold">🧠</div>
+                        <h3 class="card-title">LLM Fine-Tuning & Model Hosting</h3>
+                        <p class="card-text">
+                            Fine-tune open-source models (Llama 3, Mistral, Qwen, DeepSeek) on your domain-specific datasets. Host on cost-optimized serverless GPU clusters inside your private cloud for data privacy.
+                        </p>
+                        <ul style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.8; margin-top: 0.5rem;">
+                            <li>✦ LoRA & QLoRA Parameter-Efficient Fine-Tuning</li>
+                            <li>✦ Private On-Premise & Cloud GPU Deployment</li>
+                            <li>✦ 70% Lower API Cost than Proprietary Models</li>
+                        </ul>
+                    </article>
+
+                    <!-- AI Capability 5 -->
+                    <article class="card">
+                        <div class="card-icon peacock">📊</div>
+                        <h3 class="card-title">Predictive ML & Data Intelligence</h3>
+                        <p class="card-text">
+                            Custom machine learning algorithms for demand forecasting, customer churn prediction, fraud detection, and automated anomaly monitoring integrated directly into your business software.
+                        </p>
+                        <ul style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.8; margin-top: 0.5rem;">
+                            <li>✦ Scikit-Learn, PyTorch & TensorFlow Pipelines</li>
+                            <li>✦ Real-time Anomaly Detection Dashboards</li>
+                            <li>✦ Automated Model Retraining Schedulers</li>
+                        </ul>
+                    </article>
+
+                    <!-- AI Capability 6 -->
+                    <article class="card">
+                        <div class="card-icon">👁️</div>
+                        <h3 class="card-title">Computer Vision & OCR Parsing</h3>
+                        <p class="card-text">
+                            Intelligent document processing and image recognition. Parse handwritten invoices, IDs, medical records, and receipts into structured JSON data automatically.
+                        </p>
+                        <ul style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.8; margin-top: 0.5rem;">
+                            <li>✦ LayoutLM & Vision Transformer Models</li>
+                            <li>✦ High-Accuracy Table & Form Extraction</li>
+                            <li>✦ Seamless Database & Accounting Pipeline Sync</li>
+                        </ul>
+                    </article>
+
+                </div>
+
+                <div class="mithila-divider"></div>
+            </div>
+        </section>
+
+        <!-- Interactive AI Sandbox & Simulator -->
+        <section class="section reveal-hidden" id="interactive-ai-sandbox" style="padding-top: 0;">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Live AI Pipeline Visualizer</span>
+                    <h2 class="section-title">Test Our <span>AI Execution Engine</span></h2>
+                    <p class="section-description">Select or enter a prompt below to see how our RAG pipeline analyzes questions, retrieves relevant vector chunks, and synthesizes answers in real-time.</p>
+                </div>
+
+                <div class="demo-box" style="max-width: 900px; margin: 0 auto;">
+                    <div style="margin-bottom: 1.5rem;">
+                        <label for="demo-query" style="display: block; font-weight: 700; color: var(--color-crimson); margin-bottom: 0.5rem;">
+                            ✦ Select or Type Sample Query:
+                        </label>
+                        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem;">
+                            <button class="btn btn-outline sample-query-btn" style="padding: 0.3rem 0.8rem; font-size: 0.8rem;" data-query="How do Tech Mithilanchal's AI Chatbots integrate with WhatsApp and Zendesk?">AI Chatbot Query</button>
+                            <button class="btn btn-outline sample-query-btn" style="padding: 0.3rem 0.8rem; font-size: 0.8rem;" data-query="How can Autonomous AI Agents automate our invoice processing and calendar schedules?">AI Agent Query</button>
+                            <button class="btn btn-outline sample-query-btn" style="padding: 0.3rem 0.8rem; font-size: 0.8rem;" data-query="What web and mobile app technologies does Tech Mithilanchal specialize in?">Web & App Stack</button>
+                        </div>
+                        <div class="demo-input-group">
+                            <input type="text" id="demo-query" class="demo-input" placeholder="Type a prompt to test the AI pipeline..." value="How do Tech Mithilanchal's AI Chatbots integrate with WhatsApp and Zendesk?">
+                            <button id="run-demo-btn" class="btn btn-primary">Run Simulation ⚡</button>
                         </div>
                     </div>
 
-                    <!-- Pipeline Steps -->
-                    <div class="demo-pipeline">
-                        
-                        <!-- Step 1 -->
-                        <div class="pipeline-step">
-                            <div class="step-num">1</div>
-                            <div class="step-details">
-                                <h3 class="step-title">Query Embedding Generation</h3>
-                                <p class="step-desc">The user's text query is processed via our custom encoder to generate a dense, high-dimensional vector representation capturing semantic intent.</p>
-                            </div>
+                    <!-- Pipeline Steps Visualizer -->
+                    <div class="pipeline-steps">
+                        <div class="pipeline-step" id="step-1">
+                            <div class="pipeline-step-num">Step 01</div>
+                            <div class="pipeline-step-title">1. Query Analysis</div>
                         </div>
-
-                        <!-- Step 2 -->
-                        <div class="pipeline-step">
-                            <div class="step-num">2</div>
-                            <div class="step-details">
-                                <h3 class="step-title">Vector DB Retrieval & Similarity Match</h3>
-                                <p class="step-desc">The embedded query vector is run against our secure Qdrant database to retrieve the top matching document chunks based on cosine similarity.</p>
-                            </div>
+                        <div class="pipeline-step" id="step-2">
+                            <div class="pipeline-step-num">Step 02</div>
+                            <div class="pipeline-step-title">2. Context Retrieval</div>
                         </div>
-
-                        <!-- Step 3 -->
-                        <div class="pipeline-step">
-                            <div class="step-num">3</div>
-                            <div class="step-details">
-                                <h3 class="step-title">Prompt Augmentation & Context Engineering</h3>
-                                <p class="step-desc">The retrieved text chunks are formatted as references, combined with the user query, and fed into our fine-tuned LLM system prompt.</p>
-                            </div>
+                        <div class="pipeline-step" id="step-3">
+                            <div class="pipeline-step-num">Step 03</div>
+                            <div class="pipeline-step-title">3. Agent Reasoning</div>
                         </div>
-
-                        <!-- Step 4 -->
-                        <div class="pipeline-step">
-                            <div class="step-num">4</div>
-                            <div class="step-details">
-                                <h3 class="step-title">Response Synthesis & Citation Output</h3>
-                                <p class="step-desc">The model synthesizes the answer, strictly using the augmented context to avoid hallucination, complete with clickable citation markers.</p>
-                            </div>
+                        <div class="pipeline-step" id="step-4">
+                            <div class="pipeline-step-num">Step 04</div>
+                            <div class="pipeline-step-title">4. Output Synthesis</div>
                         </div>
-
                     </div>
 
+                    <!-- Simulation Result Console -->
+                    <div style="margin-top: 1.5rem;">
+                        <div style="font-size: 0.85rem; font-weight: 800; color: var(--color-crimson); margin-bottom: 0.5rem;">
+                            ✦ AI Execution Output Console:
+                        </div>
+                        <div id="demo-output-text" class="demo-output-area">
+                            Click "Run Simulation" above to execute the multi-step AI reasoning and retrieval process in real-time.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section reveal-hidden" id="ai-cta-section">
+            <div class="container">
+                <div class="contact-card" style="text-align: center; display: flex; flex-direction: column; gap: 1.5rem; align-items: center; max-width: 850px; margin: 0 auto;">
+                    <h2 style="font-family: var(--font-heading); font-size: 2.3rem; font-weight: 900; color: var(--color-black-ink);">
+                        Ready to Build Custom AI Solutions for Your Business?
+                    </h2>
+                    <p style="color: var(--text-secondary); font-size: 1.1rem; max-width: 650px; line-height: 1.6;">
+                        Partner with Tech Mithilanchal's AI engineering team to design, fine-tune, and deploy bespoke AI models and autonomous agents securely on your cloud.
+                    </p>
+                    <a href="/contact/?service=aichatbot" class="btn btn-primary" style="padding: 1rem 2.5rem; font-size: 1.1rem;">Schedule AI Architectural Call 🚀</a>
                 </div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+        <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-column">
-                    <a href="/" class="logo">
-                        <div class="logo-icon"></div>
-                        Tech<span>Mithilanchal</span>
+                <div>
+                    <a href="/" class="logo-brand" style="margin-bottom: 1rem;">
+                        <img src="/assets/logo.jpg" alt="Tech Mithilanchal" class="logo-img" style="height: 44px;">
+                        <div class="logo-text-box">
+                            <div class="logo-title" style="font-size: 1.2rem;">Tech <span>Mithilanchal</span></div>
+                            <div class="logo-tagline" style="font-size: 0.62rem;">Building Ideas • Creating Solutions</div>
+                        </div>
                     </a>
-                    <p class="footer-desc">
-                        Engineering premium, cost-optimized artificial intelligence systems for global startups, US, European, and Indian enterprises. Specializing in Chatbots, Agents, and RAG architectures.
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-top: 1rem;">
+                        Next-generation IT, AI & Digital Marketing Studio. We engineer high-performance Websites, Mobile Apps, AI Chatbots, AI Agents, Technical SEO, Digital Marketing, and Performance Ad Campaigns.
                     </p>
                 </div>
                 
-                <div class="footer-column">
-                    <h4 class="footer-title">Navigation</h4>
-                    <ul class="footer-links">
-                        <li><a href="/" class="footer-link">Home</a></li>
-                        <li><a href="/about-us/" class="footer-link">About Us</a></li>
-                        <li><a href="/services/" class="footer-link">AI Services</a></li>
-                        <li><a href="/demo/" class="footer-link">Interactive Demo</a></li>
-                        <li><a href="/contact/" class="footer-link">Contact Us</a></li>
-                    </ul>
+                <div>
+                    <h4 class="footer-col-title">Our Services</h4>
+                    <div class="footer-links">
+                        <a href="/services/website-development/">Website Development</a>
+                        <a href="/services/app-development/">Mobile App Development</a>
+                        <a href="/services/ai-chatbots/">AI Chatbots</a>
+                        <a href="/services/ai-agents/">AI Agents</a>
+                        <a href="/services/autonomous-systems/">Autonomous Systems</a>
+                        <a href="/services/digital-marketing/">Digital Marketing</a>
+                        <a href="/services/seo/">Technical SEO</a>
+                        <a href="/services/performance-marketing/">Performance Marketing</a>
+                    </div>
                 </div>
 
-                <div class="footer-column">
-                    <h4 class="footer-title">AI Offerings</h4>
-                    <ul class="footer-links">
-                        <li><a href="/services/#chatbots" class="footer-link">Proprietary Chatbots</a></li>
-                        <li><a href="/services/#agents" class="footer-link">Autonomous Agents</a></li>
-                        <li><a href="/services/#rag" class="footer-link">RAG Search Systems</a></li>
-                        <li><a href="/about-us/#values" class="footer-link">Security & IP Protection</a></li>
-                    </ul>
+                <div>
+                    <h4 class="footer-col-title">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="/">Home</a>
+                        <a href="/services/">All Services</a>
+                        <a href="/demo/">AI Lab & Demo</a>
+                        <a href="/about-us/">About Us</a>
+                        <a href="/contact/">Contact Us</a>
+                    </div>
                 </div>
 
-                <div class="footer-column">
-                    <h4 class="footer-title">Stay Connected</h4>
-                    <p class="footer-desc" style="font-size: 0.85rem;">Subscribe to receive news on cutting-edge open-source AI models & implementation guides.</p>
-                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!'); this.reset();">
-                        <input type="email" placeholder="Enter your email" class="newsletter-input" required aria-label="Email address for newsletter">
-                        <button type="submit" class="btn-icon" aria-label="Subscribe">✓</button>
-                    </form>
+                <div>
+                    <h4 class="footer-col-title">Contact Us</h4>
+                    <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 0.75rem; color: var(--text-secondary);">
+                        <strong>Email:</strong> contact@techmithilanchal.com<br>
+                        <strong>Working Hours:</strong> Mon - Sat (9 AM - 7 PM)<br>
+                        <strong>Turnaround:</strong> Within 24 Hours
+                    </p>
+                    <a href="/contact/" class="btn btn-secondary" style="padding: 0.55rem 1.1rem; font-size: 0.88rem;">Request Quote 🚀</a>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2026 TechMithilanchal. All rights reserved. Built for global scaling.</p>
-                <div class="footer-socials">
-                    <a href="#" class="social-link" aria-label="GitHub"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
-                    <a href="#" class="social-link" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"></path><circle cx="4" cy="4" r="2"></circle></svg></a>
-                    <a href="#" class="social-link" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
-                </div>
+                <div>&copy; 2026 Tech Mithilanchal. All rights reserved. Building Ideas • Creating Solutions.</div>
+                <div>Designed with Mithila Art & Tech Excellence</div>
             </div>
         </div>
     </footer>
