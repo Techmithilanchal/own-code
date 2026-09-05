@@ -43,9 +43,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 <div>
                     <h4 class="footer-col-title">Contact Us</h4>
-                    <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 0.75rem; color: var(--text-secondary);">
-                        <strong>Email:</strong> techmithilanchal@gmail.com<br>
-                        <strong>WhatsApp / Call:</strong> +91 9031865929<br>
+                    <p style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 0.75rem; color: var(--text-secondary);">
+                        <strong>Email:</strong> <a href="mailto:techmithilanchal@gmail.com" style="color: var(--color-crimson); font-weight: 700; text-decoration: underline;">techmithilanchal@gmail.com</a><br>
+                        <strong>WhatsApp / Call:</strong> <a href="tel:+919031865929" style="color: var(--color-crimson); font-weight: 700; text-decoration: underline;">+91 9031865929</a><br>
                         <strong>Working Hours:</strong> Mon - Sat (9 AM - 7 PM)<br>
                         <strong>Turnaround:</strong> Within 24 Hours
                     </p>
@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     <h3 style="font-family: var(--font-heading); font-size: 1.75rem; font-weight: 800; color: var(--color-crimson);">Redirecting to WhatsApp...</h3>
                     <p style="color: var(--text-secondary); max-width: 440px; margin: 0 auto; line-height: 1.6;">
-                        Your inquiry has been formatted and sent directly to Tech Mithilanchal on WhatsApp (<strong>+91 9031865929</strong>).
+                        Your inquiry has been formatted and sent directly to Tech Mithilanchal on WhatsApp (<strong><a href="tel:+919031865929" style="color: var(--color-crimson); text-decoration: underline;">+91 9031865929</a></strong>).
                     </p>
                     <a href="${whatsappUrl}" target="_blank" class="btn btn-primary" style="padding: 0.85rem 2rem;">Open WhatsApp Chat Directly 💬</a>
                     <button onclick="window.location.reload()" class="btn btn-secondary" style="margin-top: 0.5rem; padding: 0.5rem 1.2rem; font-size: 0.85rem;">Send Another Message</button>
